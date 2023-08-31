@@ -35,15 +35,15 @@ def gross_revenue(sales_list):
 def average_daily_revenue():
     # calculate the average daily revenue generated from the products
     for i in range(len(products)):
-        print(f"{products[i]} : {(prices[i] * last_week[i]) / 7}")
+        print(f"{products[i]} : { round((prices[i] * last_week[i]) / 7, 2) }")
 
 
 print(
-    f"The Average of the prices of all products in the store is: {gross_average_price(prices)}")
+    f"The Average of the prices of all products in the store is: { round(gross_average_price(prices), 2) }")
 
 print(f"The new price list is: {new_price_list(5)}")
 
-print(f"The Total Sales is: {gross_revenue(last_week)}")
+print(f"The Total Sales is: { round(gross_revenue(last_week), 2) }")
 
 print("****" * 5)
 print("****" * 5)
